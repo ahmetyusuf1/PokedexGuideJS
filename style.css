@@ -1,0 +1,133 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  border: none;
+  outline: none;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+  text-align: center;
+  background-color: darkorange;
+}
+
+.title {
+    font-size: 38px;
+  margin-top: 12px;
+  color: #fff;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  text-shadow: 4px 4px 6px rgba(0, 0, 0, 1);
+}
+
+.search {
+  position: relative;
+}
+
+.search-input {
+  font-family: inherit;
+  font-size: 16px;
+  padding: 18px;
+  height: 10px;
+  width: 15px;
+  border-radius: 10px;
+  transition: all 0.3s ease;
+}
+
+.search-button {
+  background-color: rgb(203, 21, 21);
+  color: #fff;
+  font-size: 36px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: 10px;
+  transition: transform 0.3s ease;
+}
+
+.search-button i {
+  cursor: pointer;
+}
+
+.search.active .search-input {
+  width: 200px;
+  background-color: #fff;
+}
+
+.search.active .search-button {
+  font-size: 30px;
+  transform: translateX(165px);
+  background-color: #fff;
+  color: rgb(203, 21, 21);
+}
+
+.pokedex-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  max-width: 80%;
+}
+
+.pokemon {
+  padding: 20px;
+  color: #fff;
+  background-color: rgb(248, 17, 17);
+  border-radius: 15px;
+}
+
+.image-container {
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 75% 30% 60% 40% / 60% 30% 60% 30%;
+}
+
+.image-container img {
+  width: 100px;
+  opacity: 0.7;
+  transition: all 0.5s ease;
+}
+
+.pokemon:hover .image-container img {
+  opacity: 1;
+  transform: scale(1.1);
+}
+
+.pokemon-info {
+  margin-top: 20px;
+}
+
+.pokemon-id {
+  background-color: rgba(0, 0, 0, 0.3);
+  border-radius: 30px;
+  padding: 5px 15px;
+  font-size: 12px;
+}
+
+.pokemon-name {
+  letter-spacing: 2px;
+  margin: 15px 0 10px;
+  text-transform: capitalize;
+}
+
+.small small {
+  padding: 0 5px;
+}
+
+.small small i {
+  margin: 0 3px;
+}
+
+.pokemon-type {
+  margin-top: 10px;
+}
+
+.pokemon-type i {
+  margin: 0 5px;
+}
